@@ -21,7 +21,6 @@ const Filter = ({setOnFilter}) => {
 
       
       const buttonFilterCategory = (id) => {
-            console.log(id);
             dispatch(setSearchProductThunks(id))
       }
 
@@ -32,6 +31,15 @@ const Filter = ({setOnFilter}) => {
                   setClas("conteiner-category")
             }
       },[filter])
+
+      const buttonFilter = (id) => {
+            return(
+                  setOnFilter(false),
+                  buttonFilterCategory(id)
+            )
+      }
+            
+      
 
       return (
             <div className='container-filter'>
@@ -50,11 +58,7 @@ const Filter = ({setOnFilter}) => {
                                     {
                                           categoryFilter.map(category => (
                                                 <div key={category.id} className="map-id">
-                                                      <button className='button-category' onClick={() => (
-                                                            setOnFilter(false),
-                                                            buttonFilterCategory(category.id) 
-                                                      )
-                                                      }>{category.name}</button>
+                                                      <button className='button-category' onClick={()=> buttonFilter(category.id)}>{category.name}</button>
                                                 </div>
                                           ))
                                     }

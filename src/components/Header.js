@@ -34,10 +34,10 @@ const Header = () => {
                                                 <div  className='user-log-out animate__animated animate__zoomIn'>
                                                       <i className="fa-solid fa-circle-user"></i>
                                                       <div>
-                                                      <button onClick={() =>(
-                                                            setUser(!user),
+                                                      <button onClick={() =>{
+                                                            setUser(!user)
                                                             localStorage.setItem("token","")
-                                                      )}>log out</button>         
+                                                      }}>log out</button>         
                                                       </div>
                                                 </div>  
                                                         

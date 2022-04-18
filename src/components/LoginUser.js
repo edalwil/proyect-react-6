@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import FormUserNew from './FormUserNew';
 import { useForm } from 'react-hook-form';
 import 'animate.css';

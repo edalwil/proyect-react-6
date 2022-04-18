@@ -20,10 +20,10 @@ const FormUserNew = ({ setSingUp}) => {
                   phone: e.phone,
             }
             dispatch(newUserThunks(userNew))
-                  .then(res => (
-                        setSingUp(false),
+                  .then(res => {
+                        setSingUp(false)
                        dispatch(setValidateUser(true))
-                  ))
+                  })
       }
 
       return (
@@ -52,10 +52,12 @@ const FormUserNew = ({ setSingUp}) => {
                         </div>
                         <button className='login-user'>Sign up</button>
                   </form>
-                  <p>Have an account? <button className='button-login' onClick={() => (
-                        dispatch(setValidateUser(true)),
-                        setSingUp(false)
-                  )}>Login</button></p>
+                  <p>Have an account? <button className='button-login' onClick={() => {
+                        return(
+                              dispatch(setValidateUser(true)),
+                              setSingUp(false)
+                        )
+                  }}>Login</button></p>
             </div>
       );
 };
