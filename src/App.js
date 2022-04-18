@@ -3,6 +3,7 @@ import { Home,Purchase,ProductDatail } from "./pages";
 import {Loading, Header} from "./components/";
 import './App.css';
 import { useSelector } from "react-redux";
+import ProtectedRoutes from "./components/ProtectedRoutes";
 
 
 
@@ -18,10 +19,12 @@ function App() {
 		}
 		<Header/>
 		<Routes>
-		<Route path="/" element={<Home />} />
-		<Route path="/news/:id" element={<ProductDatail/>} />
-		<Route path="/favorites" element={<Purchase />} />
-		</Routes>
+			<Route path="/" element={<Home />} />
+			<Route element={<ProtectedRoutes />}>
+				<Route path="/news/:id" element={<ProductDatail/>} />
+				<Route path="/favorites" element={<Purchase />} />
+			</Route>
+			</Routes>
 	</HashRouter>
     </div>
   );

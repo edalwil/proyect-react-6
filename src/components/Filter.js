@@ -39,8 +39,6 @@ const Filter = ({setOnFilter}) => {
             )
       }
             
-      
-
       return (
             <div className='container-filter'>
                   <div className='container'>

@@ -6,7 +6,8 @@ export const actions = {
       setCategory : "SET_CATEGORY",
       setValidateUser : "SET_VALIDATE_USER",
       setCard: "SET_CARD",
-      getCard: "GET_CARD"
+      getCard: "GET_CARD",
+      getPurchases: "GET_PURCHASES"
 }
 
 export const getProducts = product =>( {
@@ -34,10 +35,14 @@ export const setCard = card => ({
       payload: card
 })
 
-
 export const getCard = card => ({
       type: actions.getCard,
       payload: card
+})
+
+export const getPurchases = product => ({
+      type: actions.getPurchases,
+      payload: product
 })
 
 // token
@@ -129,6 +134,15 @@ export const addProductCardThanks = id => {
       return dispatch => {
             dispatch(inLoading(true))
             return axios.post ("https://ecommerce-api-react.herokuapp.com/api/v1/cart",id, getConfig() )
+                  .finally(() => dispatch(inLoading(false)))
+      }
+}
+
+export const getPurchasesThanks = () => {
+      return dispatch => {
+            dispatch(inLoading(true))
+            return axios.get("https://ecommerce-api-react.herokuapp.com/api/v1/purchases/", getConfig() )
+                  .then(res => dispatch(getPurchases(res?.data?.data?.purchases)))
                   .finally(() => dispatch(inLoading(false)))
       }
 }

@@ -21,18 +21,13 @@ const ProductDatail = () => {
 		(detalleProduct) => detalleProduct.id === Number(productId?.id)
       );
 
-
-      console.log(detalleProducts?.category);
       useEffect( () => {
             if (detalleProducts?.category?.id) {
                 dispatch(setProductCategotyThunks(detalleProducts?.category?.id))
             }
       },[detalleProducts?.category?.id, dispatch])
 
-
-
-
-
+      
 	return (
 		 <div className="container-product-detail">
                   <div className="home">

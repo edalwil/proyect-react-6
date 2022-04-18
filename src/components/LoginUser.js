@@ -7,13 +7,11 @@ import { loginUserThunks, setValidateUser } from '../redux/actions';
 
 
 const LoginUser = () => {
-
       const validateUser = useSelector(state => state.validateUser)
-
+      const dispatch = useDispatch()
+      
       const [singUp, setSingUp] = useState(false)
       const [loginErrot,setLoginError] = useState("")
-      
-      const dispatch = useDispatch()
       const { register, handleSubmit, } = useForm();
 
       const submit = e => {
@@ -41,7 +39,6 @@ const LoginUser = () => {
                   </button>
                               {
                                     validateUser &&  
-                  
                                     <div className='user-header animate__animated animate__zoomIn' >
                                           <i className="fa-solid fa-circle-user"></i>
                                     <div className='container-test-data'>

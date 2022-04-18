@@ -6,13 +6,13 @@ const INITIAL_STATE = {
 	category: [],
 	validateUser: false,
 	card: false,
-	getCard: []
+	getCard: [],
+	purchases : []
 }
 
 const reducer = (state = INITIAL_STATE, action) => {
 		switch(action.type){
 		case actions.getProducts:
-			console.log(action.payload);
 		    return{
 			  ...state,
 			  products: action.payload
@@ -42,6 +42,11 @@ const reducer = (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				getCard: action.payload
+			}
+		case actions.getPurchases:
+			return {
+				...state,
+				purchases: action.payload
 			}
 
 	  default:
