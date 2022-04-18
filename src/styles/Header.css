@@ -1,0 +1,158 @@
+.conteiner-header{
+      position: relative;
+      width: 100%;
+      margin-bottom: 100px;
+      z-index: 1;
+}
+
+.position-fixed{
+      padding-top: 5px;
+      padding-left: 5px;
+      display: flex;
+      justify-content:space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background-color: white
+}
+
+.link-title{
+      text-decoration: none;
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+      color: #cb5e65;
+      cursor: pointer;
+      font-weight: 600;
+}
+
+
+
+.container-icon{
+      border: none;
+      display: flex;
+}
+
+.container-icon .icon{
+      margin: 0 5px;
+      height: 70px;
+      padding: 15px;
+      border: none;
+      background-color:transparent;
+      cursor: pointer;
+}
+
+.fa-solid{
+      font-size: 1rem;
+      color: rgba(140, 137, 120, 0.7);
+}
+
+/* user  */
+
+.user-header{
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      background-color: white;
+      right: 5px;
+      width: 80%;
+      height: auto;
+      position: absolute;
+      
+}
+
+.fa-circle-user{
+      margin: 10px 0;
+      font-size: 2rem;
+}
+
+.container-test-data{
+      width: 80%;
+      height: 100px;
+      border-radius: 5px;
+      background-color: #d8f5fd;
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 20px;
+}
+
+.container-test-data  .fa-envelope, .fa-key{
+      margin-right: 10px;
+}
+
+.container-test-data > h4 {
+      text-align: center;
+}
+
+.container-test-data p {
+      margin-top: 10px;
+}
+
+.label-user{
+      text-align: left;
+}
+
+.form-user{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+}
+
+.input-user {
+      margin-bottom: 10px;
+      padding: 0 5px;
+      height: 30px;
+      border-radius: 5px;
+      border: rgba(140, 137, 120, 0.7) solid 1px;
+}
+
+.login-user{
+      background-color: #f85555;
+      border: none;
+      color: #fff;
+      margin: 10px 0;
+      padding: 9px;
+      width: 100%;
+
+}
+
+.error-login{
+      color: red;
+      margin: 10px 0;
+}
+
+.button-sign-up{
+      background: transparent;
+      color: #2fa8f8;
+      border: none;
+      margin: 0 0 10px 0;
+}
+
+.watch{
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      background-color: white;
+      right: 5px;
+      width: 80%;
+      height: auto;
+}
+
+.user-log-out{
+      text-align: center;
+      background-color: white;
+      right: 5px;
+      width: 80%;
+      height: auto;
+      position: absolute;
+}
+
+/* .container-car-product{
+      position: relative;
+} */

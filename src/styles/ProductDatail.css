@@ -1,0 +1,100 @@
+.home{
+      display: flex;
+      flex-direction:row;
+      padding-left: 20px;      
+      align-items: center;
+      margin-bottom: 40px;
+}
+
+.home > .link + p {
+      margin: 0 20px;
+      background-color: red;
+      height: 7px;
+      width: 7px;
+      border-radius: 50px;
+}
+
+.images {
+      display: flex;
+      flex-direction:row;
+      justify-content:center;
+      align-items: center;
+      margin-bottom: 40px;
+}
+
+.images > button{
+      height: 30px;
+      width: 30px;
+      border-radius: 20px;
+      background-color: rgba(250, 0, 0, 0.6);
+      border: none;
+     
+}
+
+.fa-backward, .fa-forward{
+      color: rgb(0, 0, 0);
+}
+.container-img-detail{
+      display: flex;
+      justify-content: center;
+      min-width: 200px;
+      max-width: 300px;
+}
+
+.images > .container-img-detail img {
+      width: auto;
+      height:150px
+}
+
+.flex{
+      display: flex;
+      flex-direction:row;
+      justify-content:space-between;
+     align-items: center;
+}
+
+.conteiner-title {
+      margin: 20px;
+}
+.conteiner-title > h2 {
+      margin-bottom: 10px;
+}
+.conteiner-title  > .light-grey p {
+      margin: 5px 10px;
+      color: rgba(80, 80, 80, 0.8);
+}
+.conteiner-title > .price p {
+      margin: 0 10px;
+}
+.price {
+      margin-bottom: 20px;
+}
+.container-card {
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+}
+.container-card > .card-shopping {
+      font-size: 1rem;
+      color: white;
+      background-color: rgb(250, 0, 0);
+      border: none;
+      width: 80%;
+      height: 40px;
+}
+
+.container-product-detail > p {
+      margin: 0 20px;
+      letter-spacing: 1.5px;
+}
+
+.container-product-detail > h3 {
+      margin: 20px 20px;
+      color: red;
+}
+
+.container-items-similar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}

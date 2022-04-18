@@ -1,0 +1,30 @@
+.container-form-user{
+      margin-top: 70px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(252, 252, 252);
+      right: 0px;
+      width: 100%;
+      position: absolute;
+}
+
+.form-user-new label {
+      text-align: left;
+}
+
+.form-user-new  input{
+      margin-bottom: 10px;
+      padding: 0 5px;
+      height: 30px;
+      border-radius: 5px;
+      border: rgba(140, 137, 120, 0.7) solid 1px;
+}
+
+.button-login{
+      background-color: transparent;
+      border: none;
+      color: #2fa8f8;
+      margin-bottom: 10px;
+}
